@@ -1,0 +1,45 @@
+/* Content */
+/* content h1*/
+.content, section {
+  width: 100%;
+  height: 100%;
+  background-color: papayawhip;
+  font-size: 1rem;
+  padding: 2%; }
+  .content h1, section h1 {
+    font-size: 2em;
+    font-weight: bold; }
+  .content h1:hover, section h1:hover {
+    font-size: 3em;
+    background-color: white; }
+
+/* Content */
+/* content h1*/
+.content, section {
+  width: 100%;
+  height: 100%;
+  background-color: papayawhip;
+  font-size: 1rem;
+  padding: 2%; }
+
+.content h1, section h1 {
+  font-size: 2em;
+  font-weight: bold; }
+
+.content h1:hover, section h1:hover {
+  font-size: 3em;
+  background-color: white; }
+
+/*# sourceMappingURL=_content.scss.map */
+section {
+  border: 2px solid black;
+  margin: auto; }
+
+.content, section {
+  background-color: pink; }
+
+@media screen and (min-width: 70em) {
+  .content, section {
+    background-color: green; } }
+
+/*# sourceMappingURL=exo0.css.map */

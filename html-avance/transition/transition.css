@@ -1,0 +1,17 @@
+nav{
+    background-color: aliceblue;
+}
+
+ul li{
+    transition: background-color 2s ease;
+}
+ul li:hover{
+
+    background-color: cadetblue;
+
+}
+
+ul li li:hover{
+
+    background-color: aquamarine;
+}

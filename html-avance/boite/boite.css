@@ -1,0 +1,56 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 20vh;
+    background-color: crimson;
+    border: 2px solid red;
+}
+article{
+
+    background-color: cadetblue;
+    border: 2px solid black;
+
+}
+section{
+
+    border: 2px dotted pink;
+    padding: 20px 20px;
+    background-color: coral;
+    width: 50%;
+    margin: 10px auto;
+    transition: border 10s linear;
+
+
+}
+section:hover{
+
+    border:20px solid olive;
+
+}
+footer{
+    border: 2px solid yellow;
+    background-color: darkslateblue;
+    padding: 10px 10px;
+}
+div{
+
+    border:2px dotted rebeccapurple;
+    background-color: yellow;
+}
+footer div{
+
+    margin: auto;
+
+}

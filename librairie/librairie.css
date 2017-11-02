@@ -1,0 +1,116 @@
+*{
+    font-family: 'Roboto', Arial , Helvetica ,"Liberation Sans", FreeSans, Ubuntu, sans-serif;
+    box-sizing: border-box;
+    overflow: auto;
+}
+/*
+Les titres
+*/
+h1{
+
+    font-size:4rem;
+    margin: 2rem 0;
+    font-weight: bolder;
+}
+h2{
+
+    font-size: 3.5rem;
+    margin: 1.7rem 0;
+}
+h3{
+    font-size: 3rem;
+    margin: 1.4rem 0;
+}
+h4{
+    font-size: 2.5rem;
+    margin: 1.1rem 0;
+}
+h5{
+
+    font-size: 2rem;
+    margin: 0.8rem 0;
+}
+h6{
+    font-size: 2rem;
+    margin:0.6rem 0;
+    font-weight: 100;
+}
+h2,h3,h4,h5{
+    font-weight: bold;
+}
+/*
+Les sous-titres
+*/
+h1.subtitle{
+    font-size: 3rem;
+}
+h2.subtitle{
+    font-size: 2.5rem;
+}
+h3.subtitle{
+
+    font-size: 2rem;
+}
+h4.subtitle{
+
+    font-size: 1.5rem;
+}
+h5.subtitle{
+    font-size: 1rem;
+}
+h6.subtitle{
+    font-size: 1rem;
+    font-weight: 100;
+}
+.subtitle{
+    font-weight: normal;
+}
+small{
+    font-size: 0.5em;
+    display: block;
+}
+small,.subtitle{
+    color:#808080;
+}
+
+p{
+
+    line-height: 120%;
+}
+
+/*
+définir le rendu par défaut des balises de texte mark, del, ins, u, strong, em, abbr
+*/
+
+mark{
+    /* Il marque un passage spécifique,
+    que l'on souhaite mettre en valeur d'une façon particulière,
+     pour attirer l'attention*/
+    border-radius:30px 0;
+
+}
+
+del{
+/*signal un contenu suprimer*/
+    text-decoration: none;
+    background-color: #4D4D4D;
+    color: #666666;
+}
+
+mark,del,ins,u,strong,em,abbr{
+    padding:10px;
+}
+
+ins{
+    /*signal un contenu inserer*/
+    background-color: #85A5CC;
+}
+u{
+    /*En HTML5, cet élément représente un fragment de texte avec une annotation non-textuelle,
+    dont le sens n'est pas précisé mais qui est tout de même affichée. Cela pourra par exemple être le cas
+    pour marquer un texte comme étant un nom propre chinois,
+    ou pour marquer un texte qui a été mal orthographié.*/
+
+    background-color: #FB0026;
+    color: white;
+}

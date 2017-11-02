@@ -1,0 +1,30 @@
+@import '0';
+@import 'content.scss';
+
+$contentBackgroundColor:pink;
+
+section{
+    @extend .content;
+    border: 2px solid black;
+    margin: auto;
+    
+    
+}
+
+.content{
+    background-color: $contentBackgroundColor;
+}
+@media screen and (min-width:70em){
+    
+    .content{
+        $contentBackgroundColor:green;
+        background-color: $contentBackgroundColor;
+    }
+}
+
+@media screen and (min-width:65em){
+    
+    article{
+        // c'est mal @extend .content; 
+    }
+}

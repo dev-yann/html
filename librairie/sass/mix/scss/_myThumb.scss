@@ -1,0 +1,55 @@
+@import "reset";
+$widthThumb:50%;
+$paddingThumb:10px;
+$borderThumb:2px solid grey;
+$buttonColor:blue;
+$buttonColorFont:white;
+$box_thumb:border-box;
+
+
+
+@mixin Thumb($widthThumb, $paddingThumb, $borderThumb, $buttonColor, $buttonColorFont){
+
+  width: $widthThumb;
+  padding: $paddingThumb;
+  border:$borderThumb;
+  box-sizing: border-box;
+
+  p+p{
+    background-color: $buttonColor;
+    color:$buttonColorFont;
+
+    display: block;
+    text-align: center;
+  }
+
+  p+p:hover{
+
+    background-color: darken( $buttonColor, 10% );
+
+  }
+
+  img{
+    width: 100%;
+  }
+
+  h3{
+    margin:$paddingThumb 0;
+    padding: $paddingThumb 0;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  p+p > a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: $paddingThumb;
+  }
+
+  // mettre en forme le paragraphe correspondant au bouton : marge, couleurs ; arrondir les coins,
+
+
+}
+
+

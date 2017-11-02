@@ -1,0 +1,11 @@
+@import "_myThumb";
+
+body > div{
+
+  @include Thumb($widthThumb, $paddingThumb, $borderThumb, $buttonColor, $buttonColorFont);
+  //display: inline-block;
+
+
+}
+
+

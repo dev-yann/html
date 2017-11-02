@@ -1,0 +1,11 @@
+section div {
+    float: right;
+    font-size: 0;
+}
+
+#coinbasdroite{
+    clear: right;
+}
+body > section{
+    float: right;
+}

@@ -1,0 +1,30 @@
+/* Content */
+$contentfont-size:1rem;
+$contentWidth:100%;
+$contentHeight:100%;
+$contentBackgroundColor:papayawhip;
+$contentPadding:2%;
+
+/* content h1*/
+$contenth1font-size:2em;
+$contenth1font-weight:bold;
+
+.content{
+    width: $contentWidth;
+    height: $contentHeight;
+
+    background-color : papayawhip;
+    font-size: $contentfont-size;
+    padding: $contentPadding;
+    
+    h1{
+        font-size: $contenth1font-size;
+        font-weight: $contenth1font-weight;
+    }
+    h1:hover{
+        font-size: $contenth1font-size + 1em;
+        background-color: lighten($contentBackgroundColor, 50%);
+    }
+ 
+}
+

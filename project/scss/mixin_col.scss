@@ -1,0 +1,20 @@
+$lcol:10%; 
+$cols:8;
+$largeurGouttiere:(100 - ($cols*$lcol))/($cols+1);
+
+@mixin grid_col($cols,$lcol,$largeurGouttiere){
+  
+    width:($lcol*$cols + $largeurGouttiere*($cols - 1));
+    margin-left: $largeurGouttiere;
+    background-color: gold;
+    
+}
+
+@for $nbcols from 1 to $cols+1{
+     
+     .col-#{$nbcols}{
+    
+        @include grid-col($nbcols,$lcol,$largeurGouttiere);
+     
+     }
+}

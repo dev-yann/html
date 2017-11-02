@@ -1,0 +1,23 @@
+ /* definition des largeur de cols */ 
+
+@mixin grid-col($cols, $nbCols){
+	sizing-box: border-box;
+	width: ($largeCols*$cols + $largeurGouttiere*($cols - 1))*1%;
+	margin-left: $largeurGouttiere*1%;
+    height : 1000px;
+}
+@for $cols from 1 to $nbCols +1{
+	.col-#{$cols}{
+		@include grid-col($cols, $nbCols);
+		border: 1px solid black;
+   
+	}
+}
+
+
+/* definition des offset */
+
+@mixin grid-offset($cols, $nbCols){
+	//margin-left: $largeurGouttiere*$cols*1%+largeCols;
+    margin-left: (($cols*$largeurGouttiere + $cols*$largeCols)*1%); 
+}

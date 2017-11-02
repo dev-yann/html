@@ -1,0 +1,59 @@
+//@import 'grilles-offset';
+@import 'grilles-mixin';
+
+$largeCols : 15;  			/* unité en : % */
+$nbCols:8;
+
+html, body, ul, ol {
+	margin:0; 
+	padding:0;
+}
+body{
+	sizing-box:border-box;
+}
+section{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+//Affichage de la grille
+
+#grille{
+    position: absolute;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#grille div{
+    background-color: grey;
+    opacity: 0.2;
+    height: 3000px;
+    @include grille(8,10%,0,1);
+}
+
+//Positionnement du contenu
+
+/* Dans le cas ou le div n'est pas défini : il prend qu'une colonne */
+
+section:nth-child(2) div{
+    @include grille(8,10%,0,1);
+}
+/* =================================================== */ 
+
+section:nth-child(2) div:nth-child(1){
+    @include grille(8,10%,0,1);
+}
+
+section:nth-child(2) div:nth-child(2){
+    @include grille(8,10%,1,3);
+}
+
+section:nth-child(2) div:nth-child(3){
+    @include grille(8,10%,2,4);
+}
+
+section:nth-child(2) div:nth-child(4){
+    @include grille(8,10%,0,8);
+}
+

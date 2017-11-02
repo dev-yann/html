@@ -1,0 +1,134 @@
+article{
+	background-color: red;
+}
+section{
+	background-color: green;
+}
+div{
+	background-color: black;
+}
+ul{
+	background-color: yellow;
+}
+li{
+	background-color: blue;
+}
+div::after {
+  content: "</diooooov>";
+	color:red;
+	
+}
+div::first-letter{
+	color: blue;
+}
+
+
+/* Liste des selecteurs : https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#descendant-combinators
+
+Selecteur de filiation (descendance) :
+E B :
+ E + B Frere directe (juste après)
+ E>B immédiatement descendant de E
+E~B Tous les B frères de E, après E
+
+
+Selecteur d'attributs :
+Avec Id, Classe et, attribut (ex. name="", noté [...] dans CSS)
+
+Selecteur topologique :
+E:first-child : Premier enfant
+Derniers enfant
+nth-child
+
+Selecteur de type :
+E:first-of-type : ...
+E:not(s) : Tous sauf un truc
+
+Hyperliens :
+a:active...
+
+Selectionner le 2nd div fils de la 3eme section
+*/
+
+div::after {
+  content: "Div";
+	color:deepskyblue;
+	
+}
+li::after {
+  content: "li";
+	color:deepskyblue;
+	
+}
+ul::after {
+  content: "ul";
+	color:green;
+	
+}
+section::after {
+  content: "section";
+	color:red;
+	
+}
+article::after {
+  content: "article";
+	color:red;
+	
+}
+
+li#plage{
+	background-color:green;
+}
+li.lali{
+	background-color: yellow;
+}
+li[name="test"]{
+	background-color: red;
+}
+
+div div{
+	background-color:yellow;	
+}
+
+li>ul{
+	background-color:red;
+}
+
+div + div{
+		background-color:pink;
+}
+
+
+nav~article{
+	background-color:purple;
+	
+}
+div:first-child{
+	background-color: grey;
+	
+}
+div:last-child{
+	background:yellow;
+}
+
+div:nth-child(7){
+	background-color:green; 
+} 
+div:nth-child(8):hover{
+	background-color:grey;
+	
+}
+
+div:nth-child(8):active{
+	background-color:yellow;
+	
+}
+
+div:nth-of-type(6) {
+	background-color:red;
+}
+
+div:not(li){
+	background-color:purple;
+}
+

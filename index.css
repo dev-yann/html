@@ -1,0 +1,42 @@
+*{
+    /*box-sizing: border-box;*/
+}
+body,html {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+header{
+
+    width: 20%;
+}
+/*distrubution sur l'axe principal*/
+ul {
+    display: flex;
+    flex-flow: column nowrap;
+    /*
+    flew-flow: row wrap-reverse;
+
+    */
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+
+    list-style-type: none;
+    display: block;
+
+}
+
+
+/*Alignement*/
+/*Alignement de l'axe principal: justify-content*/
+/*Alignement de l'axe secondaire: align items*/

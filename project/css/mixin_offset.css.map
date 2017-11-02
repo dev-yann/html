@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAYK,SAAkB;EANnB,WAAW,EAAE,cAA2C;;AAMvD,SAAkB;EANnB,WAAW,EAAE,cAA2C;;AAMvD,SAAkB;EANnB,WAAW,EAAE,cAA2C;;AAMvD,SAAkB;EANnB,WAAW,EAAE,cAA2C;;AAMvD,SAAkB;EANnB,WAAW,EAAE,cAA2C;;AAMvD,SAAkB;EANnB,WAAW,EAAE,cAA2C;;AAMvD,SAAkB;EANnB,WAAW,EAAE,cAA2C",
+"sources": ["../scss/mixin_offset.scss"],
+"names": [],
+"file": "mixin_offset.css"
+}

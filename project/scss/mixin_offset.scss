@@ -1,0 +1,18 @@
+$lcol:10%; 
+$cols:8;
+$largeurGouttiere:(100 - ($cols*$lcol))/($cols+1);
+
+@mixin grid_offset($lcol,$largeurGouttiere,$cols){
+  
+    margin-left: ($lcol*$cols)+($largeurGouttiere*($cols+1));
+    
+}
+
+@for $nbcols from 1 to $cols{
+     
+     .offset-#{$nbcols}{
+    
+        @include grid_offset($lcol,$largeurGouttiere,$nbcols);
+     
+     }
+}

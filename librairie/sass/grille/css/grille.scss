@@ -1,0 +1,129 @@
+$lcol:10%; 
+$cols:8;
+$largeurGouttiere:(100 - ($nbCol*$Lcol))/($nbCol+1);
+
+
+@mixin grid_col($cols,$lcol,$largeurGouttiere){
+  
+    width:($lcol*$cols + $largeurGouttiere*($cols - 1));
+    margin-left: $largeurGouttiere;
+    background-color: gold;
+    
+}
+
+@for $nbcols from 1 to $cols{
+     
+     .col-#{$nbcols}{
+    
+        @include grid-col();
+     
+     }
+}
+
+*{
+
+    box-sizing: border-box;
+}
+
+body,html{
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.myabsolute{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: grey;
+}
+
+div.row{
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+div.row.no-wrap{
+    flex-flow: row nowrap;
+}
+
+.col1{
+    width: $lcol;
+    background-color: green;
+    margin-left: $largeurGouttiere;
+}
+.col2{
+    width: $lcol*2 + $largeurGouttiere;
+    background-color: green;
+    margin-left: $largeurGouttiere;
+}
+.col3{
+    width: $lcol*3 + $largeurGouttiere*2;
+    background-color: green;
+    margin-left: $largeurGouttiere;
+}
+.col4{
+    width: $lcol*4 + $largeurGouttiere*3;
+    background-color: green;
+    margin-left: $largeurGouttiere;
+}
+.col5{
+    width: $lcol*5 + $largeurGouttiere*4;
+    background-color: green;
+    margin-left: $largeurGouttiere;
+}
+.col6{
+    width: $lcol*6 + $largeurGouttiere*5;
+    background-color: green;
+    margin-left: $largeurGouttiere;
+}
+.col7{
+    width: $lcol*7 + $largeurGouttiere*6;
+    background-color: green;
+    margin-left: $largeurGouttiere;
+}
+.col8{
+    width: $lcol*8 + $largeurGouttiere*7;
+    background-color: green;
+    margin-left: $largeurGouttiere;
+}
+
+.offset-1{
+    margin-left: $largeurGouttiere*2 + $lcol;
+}
+.offset-2{
+    margin-left: $largeurGouttiere*3 + $lcol*2;
+}
+.offset-3{
+    margin-left: $largeurGouttiere*4 + $lcol*3;
+}
+.offset-4{
+    margin-left: $largeurGouttiere*5 + $lcol*4;
+}
+.offset-5{
+    margin-left: $largeurGouttiere*6 + $lcol*5;
+}
+.offset-6{
+    margin-left: $largeurGouttiere*7 + $lcol*6;
+}
+.offset-7{
+    margin-left: $largeurGouttiere*8 + $lcol*7;
+}
+
+.left-marge-none{
+    margin-left: 0;
+}
+
+.right-marge-none{
+    
+    
+}
+

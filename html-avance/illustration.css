@@ -1,0 +1,63 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#main p span.citation:nth-child(even){
+
+    background-color: darkmagenta;
+}
+#main p span.citation:nth-child(odd){
+
+    background-color: chocolate;
+}
+
+
+h3#References + div > div > ol.references li:nth-child(3n+1){
+
+    background-color:blue;
+}
+h3#References + div > div > ol.references li:nth-child(3n+2){
+    background-color: cornflowerblue;
+}
+h3#References + div > div > ol.references li:nth-child(3n+3){
+    background-color: darkred;
+}
+
+h3#References + div > div > ol.references li:first-child{
+
+    background-color: chartreuse;
+
+}
+
+h3#References + div > div > ol.references li:last-child{
+
+    background-color: inherit;
+    border-bottom: 2px solid black;
+
+}
+
+#toc ul li a{
+    color: transparent;
+    transition: color 1s ease, background-color 1s ease;
+}
+
+#toc:hover ul li a{
+
+    color: cadetblue;
+}
+
+#toc ul li a:hover{
+
+    background-color: crimson;
+
+}
+h1{
+    margin: auto;
+    border: 2px solid black;
+}
+div#intro,div#toc{
+
+    margin:auto;
+    width: 50%;
+}

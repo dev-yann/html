@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+#logo_udl{
+    float: left;
+    width: calc(100%/3);
+}
+#logo_iutnc{
+    float: right;
+    width: calc(100%/3);
+}
+section:nth-child(even){
+    background-color: cadetblue;
+    border:2px solid black;
+}
+section{
+    width: 50%;
+    float: left;
+    height: 500px;
+    overflow: auto;
+}
+article:nth-child(even){
+    background-color: darkslategrey;
+    border: 2px solid firebrick;
+}
+article:nth-of-type(1) section:nth-child(5){
+    float:none;
+}
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
